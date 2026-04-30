@@ -1,0 +1,71 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Indian Railways - Live Status Board</title>  
+  <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+  <header>  
+    <div class="logo">  
+      <span class="ir">Indian Railways</span>  
+      <span class="badge">LIVE STATUS BOARD</span>  
+    </div>  
+    <p class="station">Pune Junction — Platform View</p>  
+  </header>  
+  <main>  
+    <table>  
+      <thead>  
+        <tr>  
+          <th>Train No.</th>  
+          <th>Train Name</th>  
+          <th>From</th>  
+          <th>Scheduled</th>  
+          <th>Status</th>  
+        </tr>  
+      </thead>  
+      <tbody>  
+        <tr>  
+          <td>12127</td>  
+          <td>Intercity Express</td>  
+          <td>Mumbai CST</td>  
+          <td>07:45</td>  
+          <td class="on-time">ON TIME</td>  
+        </tr>  
+        <tr>  
+          <td>11301</td>  
+          <td>Udyan Express</td>  
+          <td>Bengaluru</td>  
+          <td>09:10</td>  
+          <td class="delayed">DELAYED 25 min</td>  
+        </tr>  
+        <tr>  
+          <td>12025</td>  
+          <td>Shatabdi Express</td>  
+          <td>Mumbai CST</td>  
+          <td>10:00</td>  
+          <td class="on-time">ON TIME</td>  
+        </tr>  
+        <tr>  
+          <td>17031</td>  
+          <td>Mumbai Express</td>  
+          <td>Hyderabad</td>  
+          <td>11:30</td>  
+          <td class="delayed">DELAYED 10 min</td>  
+        </tr>  
+        <tr>  
+          <td>12163</td>  
+          <td>Dadar Express</td>  
+          <td>Chennai</td>  
+          <td>13:15</td>  
+          <td class="on-time">ON TIME</td>  
+        </tr>  
+      </tbody>  
+    </table>  
+    <button onclick="refresh()">Refresh Board</button>  
+    <p id="last-updated"></p>  
+  </main>  
+  <script src="app.js"></script>  
+</body>  
+</html>  
